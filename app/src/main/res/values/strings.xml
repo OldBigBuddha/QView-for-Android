@@ -4,6 +4,10 @@
     <string name="navigation_main_search">検索</string>
     <string name="navigation_main_profile">プロフィール</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    // Samples
+    <string name="sample_article_title">Kotlinでナウい構成のAndroidアプリを作ってみた</string>
+    <string name="sample_article_author">by OldBigBuddha</string>
+    <string name="sample_article_past_time">1 day ago</string>
+    <string name="sample_article_likes_count">7630</string>
+
 </resources>

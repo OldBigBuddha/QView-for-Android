@@ -30,13 +30,17 @@ dependencies {
 
     implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
-    implementation("androidx.recyclerview:recyclerview:1.0.0-beta01")
+    implementation("androidx.recyclerview:recyclerview:1.1.0-alpha02")
+    implementation("androidx.cardview:cardview:1.0.0")
     implementation("com.google.android.material:material:1.1.0-alpha03")
-    implementation("androidx.legacy:legacy-support-v4:1.0.0-beta01")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
     // Fuel
     implementation("com.github.kittinunf.fuel:fuel:2.0.1")
     implementation("com.github.kittinunf.fuel:fuel-android:2.0.1")
+
+    // Picasso
+    implementation("com.squareup.picasso:picasso:2.5.2")
 
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.2-alpha01")
