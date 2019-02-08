@@ -3,4 +3,7 @@
     <string name="navigation_main_new">新着記事</string>
     <string name="navigation_main_search">検索</string>
     <string name="navigation_main_profile">プロフィール</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

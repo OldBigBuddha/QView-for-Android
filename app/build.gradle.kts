@@ -30,7 +30,9 @@ dependencies {
 
     implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+    implementation("androidx.recyclerview:recyclerview:1.0.0-beta01")
     implementation("com.google.android.material:material:1.1.0-alpha03")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0-beta01")
 
     // Fuel
     implementation("com.github.kittinunf.fuel:fuel:2.0.1")
