@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_article.view.*
 
 import net.oldbigbuddha.qview.ArticleItem
@@ -29,7 +30,7 @@ class ArticleRecyclerAdapter(
                         context.getString(R.string.sample_article_past_time),
                         7630,
                         "URL",
-                        "Profile image URL"
+                        "https://avatars.githubusercontent.com/u/13755428"
                     )
                 )
             }
@@ -49,6 +50,8 @@ class ArticleRecyclerAdapter(
         holder.tvAuthor.text = targetArticle.author
         holder.tvLikesCount.text = targetArticle.likesCount.toString()
         holder.tvPastTime.text = targetArticle.createdAt
+
+        Picasso.with(context).load(targetArticle.profileImageUrl).fit().into(holder.ivProfile)
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

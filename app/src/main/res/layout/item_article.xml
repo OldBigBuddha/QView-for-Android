@@ -11,7 +11,9 @@
             android:layout_height="140dp"
             android:padding="8dp"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp">
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true">
 
         <LinearLayout
                 android:orientation="horizontal"
@@ -24,7 +26,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"/>
+                    android:scaleType="fitCenter" />
+                    <!--android:background="@color/colorPrimary"/>-->
 
             <!--記事情報(ArticleItem)-->
             <LinearLayout
