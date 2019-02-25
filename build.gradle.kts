@@ -5,8 +5,9 @@ buildscript {
         
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.3.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.21")
+        classpath("com.android.tools.build:gradle:${Versions.gradlePlugin}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}")
     }
 }
 
@@ -14,6 +15,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven("https://kotlin.bintray.com/kotlinx")
     }
 }
 

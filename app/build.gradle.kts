@@ -2,16 +2,17 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
+    id("kotlinx-serialization")
 }
 
 android {
-    compileSdkVersion(28)
+    compileSdkVersion(Versions.compileSdk)
     defaultConfig {
         applicationId = "net.oldbigbuddha.hellokts"
-        minSdkVersion(21)
-        targetSdkVersion(28)
-        versionCode = 1
-        versionName = "1.0.0"
+        minSdkVersion(Versions.minSdk)
+        targetSdkVersion(Versions.targetSdk)
+        versionCode = Versions.code
+        versionName = Versions.name
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -25,24 +26,30 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21")
-    implementation("androidx.core:core-ktx:1.1.0-alpha04")
+    implementation(Dependencies.Kotlin.stdLib)
 
-    implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
-    implementation("androidx.recyclerview:recyclerview:1.1.0-alpha02")
-    implementation("androidx.cardview:cardview:1.0.0")
-    implementation("com.google.android.material:material:1.1.0-alpha03")
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation(Dependencies.AndroidX.ktxCore)
+    implementation(Dependencies.AndroidX.appCompat)
+    implementation(Dependencies.AndroidX.constraintlayout)
+    implementation(Dependencies.AndroidX.recyclerView)
+    implementation(Dependencies.AndroidX.cardView)
 
-    // Fuel
-    implementation("com.github.kittinunf.fuel:fuel:2.0.1")
-    implementation("com.github.kittinunf.fuel:fuel-android:2.0.1")
+    implementation(Dependencies.Google.material)
 
-    // Picasso
-    implementation("com.squareup.picasso:picasso:2.5.2")
+//    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
-    testImplementation("junit:junit:4.12")
-    androidTestImplementation("androidx.test:runner:1.1.2-alpha01")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.1.2-alpha01")
+    implementation(Dependencies.KotlinX.coroutines)
+    implementation(Dependencies.KotlinX.serialization)
+
+    implementation(Dependencies.Fuel.fuel)
+    implementation(Dependencies.Fuel.android)
+    implementation(Dependencies.Fuel.coroutines)
+    implementation(Dependencies.Fuel.serialization)
+
+    implementation(Dependencies.Glide.glide)
+    annotationProcessor(Dependencies.Glide.annotation)
+
+    testImplementation(Dependencies.Test.junit)
+    androidTestImplementation(Dependencies.Test.Android.runner)
+    androidTestImplementation(Dependencies.Test.Android.espresso)
 }

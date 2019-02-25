@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_article.view.*
 
 import net.oldbigbuddha.qview.ArticleItem
@@ -51,7 +51,11 @@ class ArticleRecyclerAdapter(
         holder.tvLikesCount.text = targetArticle.likesCount.toString()
         holder.tvPastTime.text = targetArticle.createdAt
 
-        Picasso.with(context).load(targetArticle.profileImageUrl).fit().into(holder.ivProfile)
+        Glide
+            .with(context)
+            .load(targetArticle.profileImageUrl)
+            .fitCenter()
+            .into(holder.ivProfile)
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
