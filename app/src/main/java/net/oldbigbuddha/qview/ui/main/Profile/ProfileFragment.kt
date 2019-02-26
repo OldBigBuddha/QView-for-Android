@@ -1,4 +1,4 @@
-package net.oldbigbuddha.qview.fragments.main
+package net.oldbigbuddha.qview.ui.main.Profile
 
 
 import android.os.Bundle
@@ -17,14 +17,14 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class SearchArticleFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search_article, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
 

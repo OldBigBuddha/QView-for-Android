@@ -1,4 +1,4 @@
-package net.oldbigbuddha.qview.adapters
+package net.oldbigbuddha.qview.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater

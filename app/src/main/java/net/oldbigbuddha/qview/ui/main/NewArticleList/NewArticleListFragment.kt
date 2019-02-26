@@ -1,4 +1,4 @@
-package net.oldbigbuddha.qview.fragments.main
+package net.oldbigbuddha.qview.ui.main.NewArticleList
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_new_article_list.view.*
 import net.oldbigbuddha.qview.R
-import net.oldbigbuddha.qview.adapters.ArticleRecyclerAdapter
+import net.oldbigbuddha.qview.ui.adapters.ArticleRecyclerAdapter
 
 class NewArticleListFragment : Fragment() {
 

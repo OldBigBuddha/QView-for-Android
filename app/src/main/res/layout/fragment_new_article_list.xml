@@ -3,7 +3,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:padding="8dp"
-             tools:context="net.oldbigbuddha.qview.fragments.main.NewArticleListFragment">
+             tools:context=".ui.main.NewArticleList.NewArticleListFragment">
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_new_articles"
             android:padding="8dp"

@@ -1,13 +1,13 @@
-package net.oldbigbuddha.qview.activities
+package net.oldbigbuddha.qview.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import net.oldbigbuddha.qview.R
-import net.oldbigbuddha.qview.fragments.main.NewArticleListFragment
-import net.oldbigbuddha.qview.fragments.main.ProfileFragment
-import net.oldbigbuddha.qview.fragments.main.SearchArticleFragment
+import net.oldbigbuddha.qview.ui.main.NewArticleList.NewArticleListFragment
+import net.oldbigbuddha.qview.ui.main.Profile.ProfileFragment
+import net.oldbigbuddha.qview.ui.main.SearchArticle.SearchArticleFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,13 +15,19 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_new_article -> {
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.frame_fragments_main, NewArticleListFragment())
+                    .replace(
+                        R.id.frame_fragments_main,
+                        NewArticleListFragment()
+                    )
                     .commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_search_articles -> {
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.frame_fragments_main, SearchArticleFragment())
+                    .replace(
+                        R.id.frame_fragments_main,
+                        SearchArticleFragment()
+                    )
                     .commit()
                 return@OnNavigationItemSelectedListener true
             }
