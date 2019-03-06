@@ -50,7 +50,7 @@ dependencies {
     // Fuel
     implementation(Dependencies.Fuel.fuel)
     implementation(Dependencies.Fuel.android)
-    implementation(Dependencies.Fuel.coroutines)
+//    implementation(Dependencies.Fuel.coroutines)
     implementation(Dependencies.Fuel.serialization)
 
     // Glide
