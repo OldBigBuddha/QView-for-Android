@@ -34,6 +34,12 @@ dependencies {
     implementation(Dependencies.AndroidX.recyclerView)
     implementation(Dependencies.AndroidX.cardView)
 
+    // LifeCycle / LiveData / ViewModel
+    implementation(Dependencies.AndroidX.LifeCycle.runtime)
+    implementation(Dependencies.AndroidX.LifeCycle.extentions)
+    annotationProcessor(Dependencies.AndroidX.LifeCycle.compiler)
+
+
     implementation(Dependencies.Google.material)
 
 //    implementation("androidx.legacy:legacy-support-v4:1.0.0")
@@ -41,11 +47,13 @@ dependencies {
     implementation(Dependencies.KotlinX.coroutines)
     implementation(Dependencies.KotlinX.serialization)
 
+    // Fuel
     implementation(Dependencies.Fuel.fuel)
     implementation(Dependencies.Fuel.android)
     implementation(Dependencies.Fuel.coroutines)
     implementation(Dependencies.Fuel.serialization)
 
+    // Glide
     implementation(Dependencies.Glide.glide)
     annotationProcessor(Dependencies.Glide.annotation)
 

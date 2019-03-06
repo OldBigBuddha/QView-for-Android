@@ -15,6 +15,13 @@ object Dependencies {
         const val appCompat = "androidx.appcompat:appcompat:1.1.0-alpha02"
         const val ktxCore = "androidx.core:core-ktx:1.1.0-alpha04"
         const val cardView = "androidx.cardview:cardview:1.0.0"
+
+        object LifeCycle {
+            private const val version = "2.0.0"
+            const val runtime = "androidx.lifecycle:lifecycle-runtime:$version"
+            const val extentions = "androidx.lifecycle:lifecycle-extensions:$version"
+            const val compiler = "androidx.lifecycle:lifecycle-compiler:$version"
+        }
     }
 
     object Google {
